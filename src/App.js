@@ -4,7 +4,7 @@ import "./App.css";
 const memberList = document.getElementById("memberList");
 let memberList2 = [];
 
-function onInputChange(event) {
+function onChange(event) {
   memberList.textContent = event.target.value;
   console.log(event.target.value);
   // memberList2.forEach(nam){(nam)=>{console.log(nam)}};
@@ -25,7 +25,7 @@ function App() {
           className="pa3 ba b--green bg-lightest-blue"
           type="search"
           placeholder="add family member"
-          onChange={onInputChange}
+          onChange={onChange}
         />
         <button onClick={addMember2}>Add a Member</button>
         <p id="memberList"> Text </p>
